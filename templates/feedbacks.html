@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Feedbacks</title>
+</head>
+<body>
+    <ul>
+        {% for fb in feedbacks %}
+            <li>{{ fb.user_id }} ### {{ fb.text }} ### {{ fb.is_incomplete }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

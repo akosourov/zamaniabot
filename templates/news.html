@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Fetched news</title>
+</head>
+<body>
+    {% for news_item in news_data %}
+        <div>
+            <h2>{{ news_item['title'] }}</h2>
+            <p>{{ news_item['content'] }}</p>
+            <a href="{{ news_item['details_url'] }}">details</a>
+            <img src="{{ news_item['img_url'] }}" alt="">
+        </div>
+    {% endfor %}
+</body>
+</html>
